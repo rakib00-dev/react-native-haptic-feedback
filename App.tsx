@@ -1,7 +1,8 @@
 import { StyleSheet, Text, View } from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function App() {
+  const [keep, setKepp] = useState();
   return (
     <View>
       <Text>App</Text>
