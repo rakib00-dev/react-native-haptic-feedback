@@ -8,6 +8,8 @@ import {
   Pressable,
 } from 'react-native';
 
+import RNHapticFeedback from 'react-native-haptic-feedback';
+
 import DiceOne from '../assets/One.png';
 import DiceTwo from '../assets/Two.png';
 import DiceThree from '../assets/Three.png';
@@ -53,6 +55,7 @@ export default function App(): JSX.Element {
         setDiceImage(DiceOne);
         break;
     }
+    RNHapticFeedback.trigger('impactMedium');
   };
 
   return (
