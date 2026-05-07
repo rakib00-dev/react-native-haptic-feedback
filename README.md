@@ -1,4 +1,4 @@
-![App Preview](./assets/image.png)
+<img src="./assets/image.png" alt="App Preview" style="border-radius: 10px; height: 200px">
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
