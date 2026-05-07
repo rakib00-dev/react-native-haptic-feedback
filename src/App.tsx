@@ -1,16 +1,37 @@
-import { StyleSheet, Text, View } from 'react-native';
-import React, { useState } from 'react';
+import React, { JSX, PropsWithChildren } from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  ImageSourcePropType,
+} from 'react-native';
 
-export default function App() {
-  const [keep, setKepp] = useState();
+import DiceOne from '../assets/One.png';
+import DiceTwo from '../assets/Two.png';
+import DiceThree from '../assets/Three.png';
+import DiceFour from '../assets/Four.png';
+import DiceFive from '../assets/Five.png';
 
+type DiceProps = PropsWithChildren<{
+  imageUrl: ImageSourcePropType;
+}>;
+
+const Dice = ({ imageUrl }: DiceProps): JSX.Element => {
+  return (
+    <View>
+      <Image style={styles.diceImage} source={imageUrl} />
+    </View>
+  );
+};
+
+export default function App(): JSX.Element {
   return (
     <View>
       <Text>App</Text>
     </View>
   );
 }
-
 
 const styles = StyleSheet.create({
   container: {
